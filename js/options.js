@@ -16,7 +16,7 @@ chrome.storage.sync.get(function(data) {
 function saveSetting(){
 	var birthday = new Date(birthdayInput.value);
 	if(isNaN(birthday.getTime())){ //invalid input
-		//do somthig alert
+		birthdayInput.className = 'error';
 	}else{
 		chrome.storage.sync.set({
 			birthday: birthdayInput.value,
