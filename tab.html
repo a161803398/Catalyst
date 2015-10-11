@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>New Tab</title>
+<link rel="stylesheet" href="css/speech-input.css">
+<link rel="stylesheet" href="css/tab.css">
+</head>
+<body>
+	<a id="optionLink" href="options.html" style = "position: fixed; right:10px; top:10px;">
+		<img border="0" alt="Options" src="gear.png" width="24" height="24">
+	</a>
+	
+	<div id = "counter">
+		<h1 class="age-label">AGE</h1>
+		<h2 class="count"><label id="numHead"></label><sup><label id="numTail"></label></sup></h2>
+		<h1 class="age-label" id="lifeLabel">Today is the <label id="lifeDay"></label> day of your life.</h1>
+	</div>
+
+	<br>
+	
+	<form id="searchForm" method = "get" action = "http://www.google.com/search" style = "text-align:center;">
+		<div class="si-wrapper">
+			<input id ="keyword" type="text" name="q" class="si-input" placeholder="Keyword" size ="30" autofocus="autofocus">
+			<input type="submit" style ="display:none;"/>
+			<button class="si-btn">
+				Speech...
+				<span class="si-mic"></span>
+				<span class="si-holder"></span>
+			</button>
+		</div>
+		<!-- <input class ="big" type="submit" value="Search" /> -->
+		<select id="searchOpt">
+			<option value="Google">Google</option>		
+			<option value="Scholar">Google Scholar</option>	
+			<option value="PubMed">PubMed</option>
+
+		</select>
+	</form>
+
+	<script src="js/speech-input.js"></script>
+	<script src="js/counter.js"></script>
+		
+</body>

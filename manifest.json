@@ -1,20 +1,17 @@
 {
-   "background": {
-      "persistent": false,
-      "scripts": [ "motivation.js" ]
-   },
    "chrome_url_overrides": {
-      "newtab": "dashboard.html"
+      "newtab": "tab.html"
    },
-   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-   "description": "Replace new tab page with Motivation",
+   "description": "Show your age on new tab.(Based on Motivation)",
    "icons": {
       "128": "icon-128.png",
       "16": "icon-16.png",
       "48": "icon-48.png"
    },
    "manifest_version": 2,
-   "name": "Motivation",
+   "name": "Catalyst",
+   "options_page": "options.html",
+   "permissions": ["storage"],
    "offline_enabled": true,
-   "version": "0.6"
+   "version": "0.1.0"
 }
